@@ -1,0 +1,240 @@
+@import url('ttps://fonts.googleapis.com/css?family=Bangers&display=swap');
+  body{
+
+     background-image: url("../images/macro-shot-of-wooden-planks-326333.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right:30px;
+  }
+  .logo{grid-area: logo;}
+  .naslov{grid-area: naslov;}
+  .banner{grid-area: banner;}
+  .meni{grid-area: meni;}
+  .footer{grid-area: footer;}
+  .lab{grid-area: lab;}
+  
+
+
+  .container {
+    display: grid;
+    grid-auto-columns: 1fr 4fr 1fr;
+    grid-auto-rows: auto auto  1fr auto;
+    grid-template-areas:"logo naslov banner"
+                        "logo meni meni"
+                        ". lab ."
+                        "footer footer footer";     
+  }
+  .logo{
+    margin-bottom:5px;
+    background-color:rgba(83, 68, 41, 0.596);
+    background-image: url('../images/etf-50x50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+
+}
+.naslov{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom:none;
+    border-right:none;
+    background-color:rgba(83, 68, 41, 0.596);
+   
+    
+
+}
+.naslov p{
+    color: rgb(230, 191, 21);
+}
+.banner{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-color:black;
+    border: 2px solid black;
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius: 10px;
+    
+  
+    
+}
+
+
+
+
+.meni{
+    
+    margin-top:0px;
+    background-color:rgba(83, 68, 41, 0.596);
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    line-height: 2px;
+    color:black;
+    border: 2px solid black;
+    
+    border-top:none;
+   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    
+    
+}
+.container {
+    display: grid;
+}
+
+
+.meni li a{
+    
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(230, 191, 21);
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.meni li a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+.listHorizontal {
+    position:relative;bottom:0;
+    color: white;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+  }
+.slika1{grid-area: slika1;}
+.oprema{grid-area: oprema;}
+.slika2{grid-area: slika2;}
+.god1{grid-area: god1;}
+.god2{grid-area: god2;}
+.tekstopis{grid-area: tekstopis;}
+
+.lab{
+    font-family: 'Bangers', cursive;
+    background: rgb(155, 125, 96);
+    border: 2px solid black;
+    height: 1000px;
+    margin-top:10px;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 3fr 3fr;
+    grid-template-areas: "slika1 oprema slika2"
+                "slika1 oprema slika2"
+               "god1 tekstopis tekstopis"
+               "god2 tekstopis tekstopis";
+}
+.lab .slika1{
+    border: 2px solid black;
+    overflow: hidden;
+}
+.lab .slika1 img{
+    width: 415px;
+    height: 247px;
+
+}
+
+
+
+.lab .oprema{
+    border: 2px solid black;
+
+}
+.lab .oprema .h1{
+    text-align: center;
+    border: 3px solid  black;
+    background-color: rgb(150, 98, 50);
+}
+.lab .oprema p{
+    font-size:20px;
+}
+.lab .slika2{
+    border: 2px solid black;
+    overflow: hidden;
+}
+.lab .slika2 img{
+    width: 415px;
+    height: 247px;
+}
+
+.lab .god1{
+    border: 2px solid black;
+    background-color: rgb(155, 125, 96);
+}
+.lab h1{
+    text-align: center;
+    border: 3px solid  black;
+    background-color: rgb(150, 98, 50);
+    border-radius:10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.lab li{
+ 
+    color:rgb(44, 22, 2);
+    margin-left:140px;
+    font-size:20px;
+
+    
+}
+.lab .god2{
+    border: 2px solid black;
+    background-color: rgb(155, 125, 96);
+}
+
+  .footer{
+    margin-top:5px;
+    font-family: 'Bangers', cursive;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-left: 6px solid;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+  
+
+}
+.footer p{
+    text-align: center;
+    color: rgb(230, 191, 21);
+}
+.footer a{
+    text-align:center;
+    padding: 5px;
+    text-decoration: none;
+    color:rgb(230, 191, 21);
+    font-size:20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.footer a:hover{
+    background-color:#702b0b;
+    color:black;
+}

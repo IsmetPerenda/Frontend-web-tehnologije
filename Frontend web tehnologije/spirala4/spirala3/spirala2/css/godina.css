@@ -1,0 +1,286 @@
+@import url('ttps://fonts.googleapis.com/css?family=Bangers&display=swap'); 
+body{
+background-image: url("../images/macro-shot-of-wooden-planks-326333.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+  margin-left:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-right:30px;
+}
+.logo{grid-area: logo;}
+.naslov{grid-area: naslov;}
+.banner{grid-area: banner;}
+.meni{grid-area: meni;}
+.tabela1{grid-area: tabela1;}
+#tabela2{grid-area: tabela2;}
+.tabela3{grid-area: tabela3;}
+.tabela4{grid-area: tabela4;}
+.footer{grid-area: footer;}
+#predmeti{grid-area: predmeti;}
+#profesori{grid-area: profesori;}
+#godine{grid-area: godine;}¸
+#profesori2{grid-area: profesori2;}
+#predmeti2{grid-area: predmeti2;}
+
+.container{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr;
+    grid-template-rows: 80px 40px auto auto auto 400px 100px auto auto ;
+    grid-template-areas: "logo naslov naslov naslov naslov banner"
+                         "logo meni meni meni meni meni"
+                         "predmeti predmeti predmeti . . ."
+                         "profesori profesori profesori . . ."
+                         "godine godine godine . . ."
+                         "tabela1 tabela1 tabela1  tabela2 tabela2 tabela2"
+                         "tabela3 tabela3 tabela3 . . ."
+                         ". . .   tabela4 tabela4 tabela4"
+                         "footer  footer  footer  footer  footer  footer";
+                         
+                        
+
+
+}
+#predmeti,#profesori,#godine{
+    margin-top:2px;
+    background-color: rgba(252, 240, 221, 0.781);
+    color:black;
+}
+.logo{
+    background-color:rgba(83, 68, 41, 0.596);
+    background-image: url('../images/etf-50x50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.naslov{
+
+    font-family: 'Bangers', cursive;
+        font-style: inherit;
+        font-size: 40px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 0px;
+        padding:0;
+        border: 2px solid black;
+        border-top-left-radius: 10px;
+        border-bottom:none;
+        border-right:none;
+        background-color:rgba(83, 68, 41, 0.596);}
+
+.naslov p{
+    margin-left:20px;
+    color: rgb(230, 191, 21);
+}
+
+.banner{
+
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-color:black;
+    border: 2px solid black;
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius: 10px;
+    
+  
+    
+}
+
+.meni{
+    background-color:rgba(83, 68, 41, 0.596);
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    line-height: 2px;
+    color:black;
+    border: 2px solid black;
+    border-top:none;
+   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+    
+    
+.meni li a{
+        
+        padding: 1px;
+        text-decoration: none;
+        color: rgb(230, 191, 21);
+        border: 2px solid black;
+        border-radius: 10px;
+        
+}
+ .meni li a:hover{
+        background-color:#702b0b;
+        color:black;
+}
+.listHorizontal {
+    position:relative;bottom:0;
+    color: white;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+  }
+  .footer{
+    margin-top:5px;
+    font-family: 'Bangers', cursive;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-left: 6px solid;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+  
+
+}
+.footer p{
+    text-align: center;
+    color:  rgb(230, 191, 21);
+}
+
+
+
+.tabela1,.tabela3, #tabela2, .tabela4{
+    border-collapse: collapse;
+    
+    
+}
+.tabela1, .tabela2{
+    margin-top:10px;
+}
+.tabela1, .tabela3{
+
+     width: 95%;
+    
+}
+
+
+.tabela1 th,.tabela3 th{
+    background: rgba(161, 153, 140, 0.781);
+    color:black;
+    border: 1px solid black;
+}
+ #tabela2 td, .tabela4 td{
+    background-color:rgba(235, 219, 193, 0.781);
+    color:black;
+    border: 1px solid black;
+    
+}
+.tabela1 thead tr.prvi_red th, .tabela3 thead tr.prvi_red th{
+    text-align: center;
+}
+.tabela1 thead tr.drugi_red th, .tabela3 thead tr.drugi_red th{
+    text-align: left;  
+}
+.tabela1 thead tr.drugi_red th:nth-of-type(1), .tabela3 thead tr.drugi_red th:nth-of-type(1){
+    width: 25%;  
+}
+.tabela1 thead tr.drugi_red th:nth-of-type(2), .tabela3 thead tr.drugi_red th:nth-of-type(2){
+    width: 50%;  
+}
+.tabela1 thead tr.drugi_red th:nth-of-type(3), .tabela3 thead tr.drugi_red th:nth-of-type(3){
+    width: 25%;  
+}
+.tabela1 td, .tabela3 td{
+    background-color:rgba(235, 219, 193, 0.781);
+    border: 1px dashed;
+    color:black; 
+}
+#tabela2 th, .tabela4 th{
+    background: rgba(161, 153, 140, 0.781);
+    color:black;
+}
+#tabela2 thead tr.prvi_red2 th, .tabela4 thead tr.prvi_red2 th{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#tabela2 thead tr.drugi_red2 th, .tabela4 thead tr.drugi_red2 th{
+    border: 1px dotted black;
+    border-bottom: 1px solid black;
+}
+#tabela2 thead tr.drugi_red2 th:nth-of-type(1), .tabela4 thead tr.drugi_red2 th:nth-of-type(1){
+    border-top:none;
+    border-left:1px solid black;
+}
+.footer p{
+    text-align: center;
+    color: rgb(230, 191, 21);
+}
+.footer a{
+    text-align:center;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(230, 191, 21);
+    font-size:20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.footer a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+
+#tabela2 td.mur1, #tabela2 td.rp,#tabela2 td.uup,#tabela2 td.ubp,#tabela2 td.fwt { 
+    background-color: lightsalmon;
+    color: rgb(131, 78, 12);
+}
+#tabela2 td.vjezba{
+    
+    background-color: lightgreen;
+    color: rgb(4, 51, 2);
+
+}
+#tabela2 td.tutorijal{
+    
+    background-color: lightblue;
+    color: rgb(8, 51, 77);
+
+
+}
+#tabela2 td.kombinacija{
+    
+    background-color: rgb(97, 97, 96);
+    color: rgb(0, 0, 0);
+
+
+}
+.tabela4 td.predavanje { 
+    background-color: lightsalmon;
+    color: rgb(131, 78, 12);
+}
+.tabela4 td.vjezba{
+    
+    background-color: lightgreen;
+    color: rgb(4, 51, 2);
+
+}
+.tabela4 td.tutorijal{
+    
+    background-color: lightblue;
+    color: rgb(8, 51, 77);
+
+
+}
+.tabela4 td.kombinacija{
+    
+    background-color: rgb(97, 97, 96);
+    color: rgb(0, 0, 0);
+
+
+}
+
+
+

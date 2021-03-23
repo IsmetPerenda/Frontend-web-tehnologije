@@ -1,0 +1,211 @@
+@import url('ttps://fonts.googleapis.com/css?family=Bangers&display=swap');
+ 
+body{
+
+     background-image: url("../images/macro-shot-of-wooden-planks-326333.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right:30px;
+  }
+  .logo{grid-area: logo;}
+  .naslov{grid-area: naslov;}
+  .banner{grid-area: banner;}
+  .meni{grid-area: meni;}
+  .footer{grid-area: footer;}
+  .predmeti{grid-area: predmeti;}
+  
+
+
+  .container {
+    display: grid;
+    grid-auto-columns: 1fr 4fr 1fr;
+    grid-auto-rows: auto auto  AUTO auto;
+    grid-template-areas:"logo naslov banner"
+                        "logo meni meni"
+                        ". predmeti ."
+                        "footer footer footer";     
+  }
+  .logo{
+    margin-bottom:5px;
+    background-color:rgba(83, 68, 41, 0.596);
+    background-image: url('../images/etf-50x50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+
+}
+.naslov{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom:none;
+    border-right:none;
+    background-color:rgba(83, 68, 41, 0.596);
+   
+    
+
+}
+.naslov p{
+    color: rgb(230, 191, 21);
+}
+.banner{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-color:black;
+    border: 2px solid black;
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius: 10px;
+    
+  
+    
+}
+.MUR1{grid-area: MUR1;}
+.FWT{grid-area: FWT;}
+.RP{grid-area: RP;}
+.UUP{grid-area: UUP;}
+.OBP{grid-area: OBP;}
+.predmeti{
+    font-family: 'Bangers', cursive;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "MUR1"
+                         "FWT"
+                         "RP"
+                         "UUP"
+                         "OBP";
+    
+  
+}
+
+.predmeti .MUR1, .predmeti .OBP, .predmeti .FWT, .predmeti .RP, .predmeti .UUP{
+    margin-top: 10px; 
+    border: 2px solid black;
+    background: rgb(155, 125, 96);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;;
+}
+.predmeti .MUR1 h1, .predmeti .OBP h1, .predmeti .FWT h1, .predmeti .RP h1, .predmeti .UUP h1{
+    font-size:20px;
+    border:2px solid black;
+    background-color: rgb(150, 98, 50);
+    border-radius:10px;
+    text-align:center;
+
+}
+.predmeti .MUR1 p strong, .predmeti .FWT p strong, .predmeti .RP p strong, .predmeti .UUP p strong , .predmeti .OBP p strong{
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: rgb(219, 153, 92);
+
+}
+.predmeti .MUR1 ul h2, .predmeti .OBP ul h2, .predmeti .UUP ul h2, .predmeti .FWT ul h2, .predmeti .RP ul h2{
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: rgb(219, 153, 92);
+    margin-right:1037px;
+
+}
+.predmeti .MUR1 p{
+    color:black;
+}
+
+
+.meni{
+    
+    margin-top:0px;
+    background-color:rgba(83, 68, 41, 0.596);
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    line-height: 2px;
+    color:black;
+    border: 2px solid black;
+    
+    border-top:none;
+   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    
+    
+}
+.container {
+    display: grid;
+}
+
+
+.meni li a{
+    
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(230, 191, 21);
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.meni li a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+.listHorizontal {
+    position:relative;bottom:0;
+    color: white;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+  }
+  .footer{
+    margin-top:5px;
+    font-family: 'Bangers', cursive;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-left: 6px solid;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+  
+
+}
+.footer p{
+    text-align: center;
+    color: rgb(230, 191, 21);
+}
+.footer a{
+    text-align:center;
+    padding: 5px;
+    text-decoration: none;
+    color:rgb(230, 191, 21);
+    font-size:20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.footer a:hover{
+    background-color:#702b0b;
+    color:black;
+}

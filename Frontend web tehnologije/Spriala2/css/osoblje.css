@@ -1,0 +1,350 @@
+@import url('ttps://fonts.googleapis.com/css?family=Bangers&display=swap');
+  body{
+     background-image: url("../images/macro-shot-of-wooden-planks-326333.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right:30px;
+  }
+.logo{grid-area: logo;}
+.naslov{grid-area: naslov;}
+.banner{grid-area: banner;}
+.meni{grid-area: meni;}
+.footer{grid-area: footer;}
+
+.prof{ grid-area: prof;}
+.prof2{ grid-area: prof2;}
+.asis{grid-area: asis;}
+.asis2{grid-area: asis2;}
+.asis3{grid-area: asis3;}
+
+.prof3{ grid-area: prof3;}
+.prof4{ grid-area: prof4;}
+.asis4{grid-area: asis4;}
+.asis5{grid-area: asis5;}
+.asis6{grid-area: asis6;}
+
+
+
+
+.container {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto auto 2fr 2fr 2fr 2fr auto;
+    grid-template-areas:"logo naslov naslov naslov banner "
+                        "logo meni meni meni meni "
+                        " . prof prof2 . ."
+                        " . asis asis2 asis3 ."
+                        " . prof3 prof4 . ."
+                        " . asis4 asis5 asis6 ."
+                        "footer footer footer footer  footer ";
+}
+.logo{
+    margin-bottom:5px;
+    background-color:rgba(83, 68, 41, 0.596);
+    background-image: url('../images/etf-50x50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+
+}
+.naslov{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom:none;
+    border-right:none;
+    background-color:rgba(83, 68, 41, 0.596);
+   
+    
+
+}
+.naslov p{
+    color: rgb(230, 191, 21);
+}
+.banner{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-color:black;
+    border: 2px solid black;
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius: 10px;
+    
+  
+    
+}
+
+
+
+
+.meni{
+    
+    margin-top:0px;
+    background-color:rgba(83, 68, 41, 0.596);
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    line-height: 2px;
+    color:black;
+    border: 2px solid black;
+    
+    border-top:none;
+   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    
+    
+}
+
+.meni li{
+    
+}
+
+
+.meni li a{
+    
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(230, 191, 21);
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.meni li a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+.slika{grid-area: slika;}
+.titula{grid-area: titula;}
+.imeprezime{grid-area: imeprezime;}
+.brojkancl{grid-area: brojkancl;}
+.predmet{grid-area: predmet;}
+
+.prof, .prof2, .prof3, .prof4{
+    background-color: rgb(243, 212, 182);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    height: 500px;
+    margin-top:10px;
+    margin-right:10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "slika"
+                         "imeprezime "
+                         "titula"
+                         "brojkancl"
+                         "predmet";
+}
+
+.prof .slika, .prof2 .slika, .prof3 .slika, .prof4 .slika{
+
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ 
+     
+     
+}
+.prof .slika .slika2, .prof2 .slika .slika2, .prof3 .slika .slika2, .prof4 .slika .slika2{
+    border: 1px solid black;
+    margin-left:120px;
+    margin-top:20px;
+    width:108px;
+    height:192px;
+    overflow: hidden;
+    border-radius:10px;
+    
+    
+}
+
+.prof .slika .slika2 img, .prof2 .slika .slika2 img ,.prof3 .slika .slika2 img, .prof4 .slika .slika2 img{
+
+    margin-left:0.5px;
+    width:108px;
+    height:192px;
+}
+.prof .imeprezime, .prof2 .imeprezime, .prof3 .imeprezime, .prof4 .imeprezime {
+    border:1px solid black;
+    font-size:17px;
+    background-color:rgb(226, 182, 116); 
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+}
+.prof .titula, .prof2 .titula, .prof3 .titula, .prof4 .titula {
+    border:1px solid black;
+    font-size:17px;
+    background-color: rgb(226, 182, 116);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+    
+  
+}
+.prof .brojkancl,.prof2 .brojkancl, .prof3 .brojkancl, .prof4 .brojkancl {
+    border:1px solid black;
+    font-size:17px;
+    background-color: rgb(226, 182, 116);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+
+}
+.prof .predmet, .prof2 .predmet,.prof3 .predmet, .prof4 .predmet{
+    border:1px solid black;
+    text-decoration: none;
+    font-size:17px;
+    background-color: rgb(226, 182, 116);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.prof .predmet a, .prof2 .predmet a, .prof3 .predmet a, .prof4 .predmet a{
+    text-decoration: none;
+    color:black;
+
+}
+
+
+
+
+.asis, .asis2, .asis3, .asis4, .asis5, .asis6{
+background-color: rgb(155, 125, 96);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+font-family: 'Bangers', cursive;
+text-align: center;
+height: 500px;
+margin-top:10px;
+margin-right:10px;
+margin-left: 10px;
+display: grid;
+grid-template-rows: 4fr 1fr  1fr 1fr;
+grid-template-areas: "slika"
+                     "imeprezime "
+                     "brojkancl"
+                     "predmet";
+}
+.asis .slika, .asis2 .slika, .asis3 .slika, .asis4 .slika,  .asis5 .slika,  .asis6 .slika{
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+.asis .slika .slika2, .asis2 .slika .slika2, .asis3 .slika .slika2, .asis4 .slika .slika2, .asis5 .slika .slika2, .asis6 .slika .slika2{
+    border: 1px solid black;
+    margin-left:120px;
+    margin-top:20px;
+    width:108px;
+    height:192px;
+    overflow: hidden;
+    border-radius:10px;
+}
+.asis .slika .slika2 img, .asis2 .slika .slika2 img, .asis3 .slika .slika2 img, .asis4 .slika .slika2 img, .asis5 .slika .slika2 img, .asis6 .slika .slika2 img{
+    margin-left:1px;
+    width:108px;
+    height:192px;
+}
+
+.asis .imeprezime, .asis2 .imeprezime, .asis3 .imeprezime, .asis4 .imeprezime, .asis5 .imeprezime, .asis6 .imeprezime{
+    border:1px solid black;
+    
+    font-size:17px;
+    background-color: rgb(128, 80, 9);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+}
+  
+
+.asis .brojkancl, .asis2 .brojkancl, .asis3 .brojkancl,.asis4 .brojkancl, .asis5 .brojkancl, .asis6 .brojkancl{
+    border:1px solid black;
+    font-size:17px;
+    background-color: rgb(128, 80, 9);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+}
+.asis .predmet, .asis2 .predmet, .asis3 .predmet, .asis4 .predmet, .asis5 .predmet, .asis6 .predmet{
+    border:1px solid black;
+    font-size:17px;
+    background-color: rgb(128, 80, 9);
+    border-radius:10px;
+    margin-left:40px;
+    margin-right: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.footer{
+    margin-top:5px;
+    font-family: 'Bangers', cursive;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-left: 6px solid;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+  
+
+}
+.footer p{
+    text-align: center;
+    color: rgb(230, 191, 21);
+}
+.footer a{
+    text-align:center;
+    padding: 5px;
+    text-decoration: none;
+    color:rgb(230, 191, 21);
+    font-size:20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.footer a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+
+.listHorizontal {
+    position:relative;bottom:0;
+    color: white;
+    padding:0;
+ 
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+  }

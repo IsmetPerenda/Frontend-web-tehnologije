@@ -1,0 +1,219 @@
+@import url('ttps://fonts.googleapis.com/css?family=Bangers&display=swap');
+  body{
+
+     background-image: url("../images/macro-shot-of-wooden-planks-326333.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right:30px;
+  }
+  .logo{grid-area: logo;}
+  .naslov{grid-area: naslov;}
+  .banner{grid-area: banner;}
+  .meni{grid-area: meni;}
+  .footer{grid-area: footer;}
+  .predmeti{grid-area: predmeti;}
+  #sviPredmeti{grid-area: sviPredmeti;}
+  #prvaGodina{grid-area: prvaGodina;}
+  #drugaGodina{grid-area: drugaGodina;}
+  #lista{grid-area: lista;}
+  #sortiraj{grid-area: sortiraj;}
+
+  .container {
+    display: grid;
+    grid-auto-columns: 3fr 4fr 1fr;
+    grid-auto-rows: auto auto  AUTO auto auto auto ;
+    grid-template-areas:"logo naslov banner"
+                        "logo meni meni"
+                        "sviPredmeti prvaGodina drugaGodina "
+                        "sortiraj sortiraj sortiraj"
+                        "lista lista lista"
+                        "predmeti predmeti predmeti"
+                        "footer footer footer";     
+  }
+  .logo{
+    margin-bottom:5px;
+    background-color:rgba(83, 68, 41, 0.596);
+    background-image: url('../images/etf-50x50.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+
+}
+.naslov{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom:none;
+    border-right:none;
+    background-color:rgba(83, 68, 41, 0.596);
+   
+    
+
+}
+.naslov p{
+    color: rgb(230, 191, 21);
+}
+.banner{
+    
+    font-family: 'Bangers', cursive;
+    font-style: inherit;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    padding:0;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-color:black;
+    border: 2px solid black;
+    border-left:none;
+    border-bottom:none;
+    border-top-right-radius: 10px;
+    
+  
+    
+}
+
+
+
+    
+  
+.predmeti #sortiraj {
+    width: 100px;
+    height: 100px;
+    background: rgb(155, 125, 96);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+}
+.predmeti #prvaGodina{
+    width: 100px;
+    height: 100px;
+    background: rgb(155, 125, 96);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+}
+.predmeti #drugaGodina{
+    width: 100px;
+    height: 100px;
+    background: rgb(155, 125, 96);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+}
+
+
+.predmeti #sviPredmeti{
+    width: 100px;
+    height: 100px;
+    background: rgb(155, 125, 96);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+}
+
+.predmeti ul{
+    margin-top: 10px; 
+    border: 2px solid black;
+    background: rgb(155, 125, 96);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    list-style: none;
+    font-family: 'Bangers', cursive;
+}
+.predmeti ul li{
+    font-size:20px;
+    border:2px solid black;
+    background-color: rgb(150, 98, 50);
+    border-radius:10px;
+    text-align:center;
+    padding:5px;
+
+}
+
+.meni{
+    
+    margin-top:0px;
+    background-color:rgba(83, 68, 41, 0.596);
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    line-height: 2px;
+    color:black;
+    border: 2px solid black;
+    
+    border-top:none;
+   
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    
+    
+}
+
+.meni li a{
+    
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(230, 191, 21);
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.meni li a:hover{
+    background-color:#702b0b;
+    color:black;
+}
+.listHorizontal {
+    position:relative;bottom:0;
+    color: white;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+  }
+  .footer{
+    margin-top:5px;
+    font-family: 'Bangers', cursive;
+    background-color:rgba(83, 68, 41, 0.596);
+    border-left: 6px solid;
+  
+    border: 2px solid black;
+    border-radius: 10px;
+  
+
+}
+.footer p{
+    text-align: center;
+    color: rgb(230, 191, 21);
+}
+.footer a{
+    text-align:center;
+    padding: 5px;
+    text-decoration: none;
+    color:rgb(230, 191, 21);
+    font-size:20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.footer a:hover{
+    background-color:#702b0b;
+    color:black;
+}
